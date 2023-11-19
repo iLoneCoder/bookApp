@@ -1,0 +1,66 @@
+<form action="/" method="get" class="search-side">
+    <div class="search-tile">
+        <label for="title">Title</label>
+        <input type="text" placeholder="Title" name="title" id="searchTitle" value="<%= title%>">
+    </div>
+
+    <div class="search-tile">
+        <label for="author">Author</label>
+        <input type="text" name="author" placeholder="author" id="searchAuthor" name="author" value="<%= author%>">
+    </div>
+
+    <div class="search-tile">
+        <label for="language">Language</label>
+        <input type="text" name="language" placeholder="Language" id="searchLanguage" value="<%= language%>">
+    </div>
+
+    <div class="search-tile__date">
+        <div><label>From</label><input type="date" class="date-input" id="searchFrom" name="from" value="<%= from%>"></div>
+        <div><label>To</label><input type="date" class="date-input" id="searchTo" name="to" value="<%= to%>"></div>
+    </div>
+
+
+    <button id="search">Search</button>
+</form>
+
+<!-- <script>
+    const btn = document.querySelector('#search')
+
+    const title = document.querySelector('#searchTitle')
+    const author = document.querySelector('#searchAuthor')
+    const language = document.querySelector('#searchLanguage')
+    const dateFrom = document.querySelector('#searchFrom')
+    const dateTo = document.querySelector('#searchTo')
+
+    btn.addEventListener('click', (e) => {
+        e.preventDefault()
+        const query = []
+        if(title.value.trim()) {
+            query.push(`title=${title.value.trim()}`)
+        }
+
+        if(author.value.trim()) {
+            query.push(`author=${author.value.trim()}`)
+        }
+
+        if(language.value.trim()) {
+            query.push(`language=${language.value.trim()}`)
+        }
+
+        if(dateFrom.value.trim()) {
+            query.push(`dateFrom=${dateFrom.value.trim()}`)
+        }
+
+        if(dateTo.value.trim()) {
+            query.push(`dateTo=${dateTo.value.trim()}`)
+        }
+
+        const queryString = query.join('&')
+        
+        const searchBooks = async (queryString) => {
+            const response = await fetch(`http://asd.com/?${queryString}`)
+        }
+
+        searchBooks(queryString)
+    })
+</script> -->

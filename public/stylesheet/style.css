@@ -1,0 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); */
+
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+}
+
+.container{
+    /* background-color: red; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 16px;
+    margin-left: 300px;
+}
+
+.card {
+    border: 1px solid rgba(195, 195, 195, 0.451);
+    padding: 2px 9px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 12px rgb(73, 73, 73);
+}
+
+.card-header {
+    text-align: center;
+}
+
+.card-body__tile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-body__tile p {
+    flex: 1;
+    cursor: pointer;
+}
+
+.update-tile {
+    padding: 10px;
+    text-align: right;
+}
+
