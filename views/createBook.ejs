@@ -1,0 +1,13 @@
+<%- include('layout/head')%>
+<div class="form-container">
+    <form action="/create" method="POST">
+        <div class="form-title">
+            <h2>Create book</h2>
+        </div>
+
+        <%- include('utils/formBody')%>
+
+        <button type="submit">Create</button>
+    </form>
+</div>
+<%- include('layout/bottom')%>

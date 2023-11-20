@@ -1,0 +1,13 @@
+<%- include('layout/head')%>
+<div class="form-container">
+    <form action="/edit/<%= id%>" method="POST">
+        <div class="form-title">
+            <h2>Edit book</h2>
+        </div>
+
+        <%- include('utils/formBody')%>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
+<%- include('layout/bottom')%>

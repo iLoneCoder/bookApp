@@ -55,3 +55,22 @@ label {
 #search:hover {
     background-color: #1d60be;
 }
+
+.create-book-btn {
+    margin-top: 20px;
+}
+
+.create-book-btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 5px 10px;
+    background-color: rgb(207, 176, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.create-book-btn a:hover {
+    background-color: rgb(224, 191, 9); 
+}

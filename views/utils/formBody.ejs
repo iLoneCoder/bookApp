@@ -1,0 +1,67 @@
+<div class="form-group">
+    <label for="title">Title:</label>
+    <div class="form-control">
+        <input type="text" name="title" id="title" value="<%= title %>">
+        <% if(errorMessage.titleError) {%>
+            <div class="error-message">Required field</div>
+        <%}%>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="author">Author:</label>
+    <div class="form-control">
+        <input type="text" name="author" id="author" value="<%= author %>">
+        <% if(errorMessage.authorError) {%>
+            <div class="error-message">Required field</div>
+        <%}%>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="publicationDate">Publication date:</label>
+    <div class="form-control">
+        <input type="date" name="publicationDate" id="publicationDate" value="<%= publicationDate %>">
+        <% if(errorMessage.publicationDateError) {%>
+            <div class="error-message">Required field</div>
+        <%}%>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="isbnNumber">ISBN number:</label>
+    <div class="form-control">
+        <input type="text" name="isbnNumber" id="isbnNumber" value="<%= isbnNumber %>">
+        <% if(errorMessage.isbnNumberError) {%>
+            <div class="error-message">Required field</div>
+        <%}%>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="numberOfPages">Number of pages:</label>
+    <div class="form-control">
+        <input type="text" name="numberOfPages" id="numberOfPages" value="<%= numberOfPages %>">
+        <% if(errorMessage.numberOfPagesError) {%>
+            <div class="error-message">Required field</div>
+        <%}%>    
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="publicationLanguage">Publication language:</label>
+    <div class="form-control">
+        <input type="text" name="publicationLanguage" id="publicationLanguage" value="<%= publicationLanguage %>">
+        <% if(errorMessage.publicationLanguage) {%>
+            <div class="error-message">Required field</div>
+        <%}%>
+    </div>
+</div>
+
+
+
+<% if(success) {%>
+    <div class="message">
+        Updated 
+    </div>
+<%}%>
